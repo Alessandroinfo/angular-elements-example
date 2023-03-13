@@ -91,6 +91,10 @@ Getting Started 🚀
 
   - `npm run test-components`
 
+Result 🌐
+---------
+![](/Users/alessandrorusso/WebstormProjects/angular-elements-example/docs/imgs/img.png)
+
 Differences 🩻
 ------------
 The two different methods showcased in the repository demonstrate two different approaches for creating web components in Angular using `@angular/elements`.
