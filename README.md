@@ -16,6 +16,9 @@ Project Structure 📂
 The repository consists of the following files and directories:
 
 ```.
+├── test-web-components
+│   ├── index.html
+│   └── tabs-web-components.js
 ├── app
 │   ├── app.module.ts
 │   ├── tabs-new-way
@@ -37,21 +40,33 @@ The repository contains two methods to create web components:
 - `tabs-old-way`: The older method in which a component was included in a module.
 - `tabs-new-way`: The newer method that allows for standalone components.
 
-### `main.ts`
+#### Directory `test-web-components`
+
+- Inside `test-web-components` will be builded the `tabs-web-components.js` that contain the concat of angular builds.
+- There you find also index.html that contain the tags of web components:
+
+```html
+...
+<h1>Tabs old way to implement web-component</h1>
+<tabs-old></tabs-old>
+
+<h1>Tabs new way to implement web-component</h1>
+<tabs-new></tabs-new>
+...
+```
+<br>
+
+#### `main.ts`
 
 This file contains the bootstrap logic for the Angular application.
 
 In this project, the file also includes a script that defines and registers the `tabs-new` custom element.
 
-### `app.module.ts`
+#### `app.module.ts`
 
 This file defines the main module of the Angular application.
 
 In this project, the file also includes a script that defines and registers the `tabs-old` custom element.
-
-### `index.html`
-
-This file contains the HTML structure of the web application.
 
 
 Getting Started 🚀
