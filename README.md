@@ -43,7 +43,7 @@ The repository contains two methods to create web components:
 #### Directory `test-web-components`
 
 - Inside `test-web-components` will be builded the `tabs-web-components.js` that contain the concat of angular builds.
-- There you find also index.html that contain the tags of web components:
+- There you find also `index.html` that contain the tags of web components:
 
 ```html
 ...
@@ -91,4 +91,12 @@ Getting Started 🚀
 
   - `npm run test-components`
 
+Differences 🩻
+------------
+The two different methods showcased in the repository demonstrate two different approaches for creating web components in Angular using `@angular/elements`.
 
+The first method, which is referred to as the "old way", involves creating a module for the web component and then registering it with `customElements.define()` in the `ngDoBootstrap()` method of the `AppModule`.
+
+The second method, which is referred to as the "new way", involves creating a standalone component and then registering it with `customElements.define()` outside of Angular's bootstrapping process.
+
+Both methods ultimately result in the creation of a custom web component, but the second method allows for more flexibility in terms of when and how the component is loaded, and also allows for the component to be used outside of an Angular context.
