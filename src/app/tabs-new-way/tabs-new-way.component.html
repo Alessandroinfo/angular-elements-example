@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let tab of tabs; let i = index"
+      [ngClass]="tab.active ? 'active' : ''"
+      (click)="setActive(i)">
+    <div>{{tab.label}}</div>
+  </li>
+</ul>

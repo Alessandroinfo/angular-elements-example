@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Angular Elements into Web Components</title>
+  <base href="/"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script src="./tabs-web-components.js"></script>
+
+  <script>
+    const changeTabsOld = () => {
+      const tabsOld = document.querySelector('tabs-old');
+      tabsOld.tabs = [{label: 'Changed', active: true}, {label: 'Different', active: false}, {label: 'Another', active: false} ];
+      // Or you can also:
+      // tabsOld.setAttribute('tabs', "[{\"label\": \"ok\"}, {\"label\": \"sssadsdlol\"}]")
+
+    }
+
+    const changeTabsNew = () => {
+      const tabsNew = document.querySelector('tabs-new');
+      tabsNew.tabs = [{label: 'Changed', active: true}, {label: 'Different', active: false}, {label: 'Another', active: false} ];
+      // Or you can also:
+      // tabsNew.setAttribute('tabs', "[{\"label\": \"ok\"}, {\"label\": \"sssadsdlol\"}]")
+
+    }
+  </script>
+</head>
+<body>
+
+<h1>Tabs old way to implement web-component</h1>
+<tabs-old></tabs-old>
+<br>
+<button onclick="changeTabsOld()">Change Tabs Old</button>
+
+<br><br>
+
+<h1>Tabs new way to implement web-component</h1>
+<tabs-new></tabs-new>
+<br>
+<button onclick="changeTabsNew()">Change Tabs New</button>
+
+</body>
+</html>
