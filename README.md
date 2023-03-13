@@ -1,5 +1,5 @@
-🛠️ Web Components with Angular Elements 
-==================================
+## 🛠️ Web Components with Angular Elements 
+
 
 This is a repository that showcases how to create web-components in Angular with [@angular/elements](https://angular.io/guide/elements). 🚀
 
