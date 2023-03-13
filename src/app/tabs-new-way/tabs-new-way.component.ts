@@ -15,7 +15,7 @@ export interface tab {
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class TabsNewWayComponent {
-  _tabs: tab[] = [{label: 'Prima', active: true}, {label: 'Seconda', active: false}];
+  _tabs: tab[] = [{label: 'First', active: true}, {label: 'Second', active: false}];
   @Input()
   get tabs(): tab[] {
     return this._tabs;
