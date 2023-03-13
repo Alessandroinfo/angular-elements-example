@@ -93,7 +93,7 @@ Getting Started 🚀
 
 Result 🌐
 ---------
-![](/Users/alessandrorusso/WebstormProjects/angular-elements-example/docs/imgs/img.png)
+![](docs/imgs/img.png)
 
 Differences 🩻
 ------------
